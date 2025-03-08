@@ -112,4 +112,6 @@ table {
 
 body {
   font-family: 'Noto Sans';
+  touch-action: manipulation; /* 터치 조작 방지 */
+  user-select: none; /* 텍스트 선택 방지 */
 }

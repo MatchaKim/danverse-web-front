@@ -40,7 +40,7 @@ const MainBusPage = () => {
 
     return (
         <div style={{ width: "100%",minHeight:"100vh",padding:"12px 12px",backgroundColor:"#f5f5f5",gap:"24px",display:"flex",flexDirection:"column" }}>
-            <RouteBar title="Main Bus" />
+            <RouteBar title="공지사항 영역" />
            {!data && 
            <>
             <Skeleton height={200}/>
