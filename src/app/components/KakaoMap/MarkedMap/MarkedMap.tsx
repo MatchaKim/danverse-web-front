@@ -1,3 +1,4 @@
+'use client';
 import { Map, MapMarker } from 'react-kakao-maps-sdk';
 import { useSearchParams } from 'next/navigation';
 
