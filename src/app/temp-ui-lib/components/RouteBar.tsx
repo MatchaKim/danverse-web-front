@@ -1,4 +1,4 @@
-import ArrowDownSvg from "./svg/arrow-down.svg?react"
+import ArrowDownSvg from "./svg/arrow-down.svg"
 
 interface RouteBarProps {
     title: string
