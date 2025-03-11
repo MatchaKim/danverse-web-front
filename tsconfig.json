@@ -23,6 +23,6 @@
       "@gorae-ui-local/*": ["../gorae-ui-info-web-front/src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../gorae-ui-info-web-front/src/*"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../gorae-ui-info-web-front/src/*", "src/app/domain/bus/busInfo.utils.deprecated.js"],
   "exclude": ["node_modules"]
 }
