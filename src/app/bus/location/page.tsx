@@ -1,11 +1,11 @@
-'use client'
-import { MarkedMap } from "@/app/components/KakaoMap/MarkedMap";
+// 'use client'
+// import { MarkedMap } from "@/app/components/KakaoMap/MarkedMap";
 
 
-const BusLocationPage = () => {
-  return (
-    <MarkedMap/>
-  );
-};
+// const BusLocationPage = () => {
+//   return (
+//     <MarkedMap/>
+//   );
+// };
 
-export default BusLocationPage;
+// export default BusLocationPage;
