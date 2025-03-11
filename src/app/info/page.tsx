@@ -1,7 +1,7 @@
 "use client"
-import RouteBar from "@gorae-ui-local/components/RouteBar";
-import Panel from "@gorae-ui-local/components/Panel";
-import Button from "@gorae-ui-local/components/Button";
+import RouteBar from "@/app/temp-ui-lib/components/RouteBar";
+import Panel from "@/app/temp-ui-lib/components/Panel";
+import Button from "@/app/temp-ui-lib/components/Button";
 import JukjeonBusCircle from "../../../public/svg/jukjeon_bus.svg"
 import { sendDataToWebView } from "react-webapp-sdk/dist/web/utils/webCommonUtils"
 const Info = () => {

@@ -1,8 +1,8 @@
 "use client"
-import RouteBar from "@gorae-ui-local/components/RouteBar";
-import Panel from "@gorae-ui-local/components/Panel";
-import BusInfoUnit from "@gorae-ui-local/components/BusInfoUnit";
-import { ColorEnum } from "@gorae-ui-local/pages/temp-danverse/ColorEnum";
+import RouteBar from "@/app/temp-ui-lib/components/RouteBar";
+import Panel from "@/app/temp-ui-lib/components/Panel";
+import BusInfoUnit from "@/app/temp-ui-lib/components/BusInfoUnit";
+
 import { useEffect, useState } from "react";
 import Skeleton from 'react-loading-skeleton'
 import { useSearchParams } from "next/navigation";
