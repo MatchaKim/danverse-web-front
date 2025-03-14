@@ -4,7 +4,10 @@ import Panel from "@/app/temp-ui-lib/components/Panel";
 import Button from "@/app/temp-ui-lib/components/Button";
 import JukjeonBusCircle from "../../../public/svg/jukjeon_bus.svg"
 import { sendDataToWebView } from "react-webapp-sdk/dist/web/utils/webCommonUtils"
+import { useSearchParams } from "next/navigation";
 const Info = () => {
+    const searchParams = useSearchParams()
+    const campus = searchParams.get("campus")
     const handleOpenDetail = () => {
         sendDataToWebView({
             action: {
@@ -14,13 +17,16 @@ const Info = () => {
             },
         })
     }
+    
     return (
         <div style={{ width: "100%",minHeight:"100vh",padding:"12px 12px",backgroundColor:"#f5f5f5",gap:"24px",display:"flex",flexDirection:"column" }}>
             <Panel header="셔틀 시간표 확인" subHeader="2024년 9월 2일(월) ~ 12. 20(금) / 토·일요일, 공휴일 제외" mainContent={
                  <>
+                 {campus === "죽전" &&
                     <span style={{fontSize:"14px",padding:"0 16px"}}>
                         <JukjeonBusCircle />
                     </span>
+                 }
                     <span style={{fontSize:"14px",padding:"0 16px"}}>
                     <Button onClick={handleOpenDetail} variant="primary" size="medium" width="100%">셔틀 시간표 확인</Button>
                     </span>
