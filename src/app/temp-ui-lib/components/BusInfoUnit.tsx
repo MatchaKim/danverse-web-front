@@ -20,7 +20,7 @@ const BusInfoUnit = ({busNumber,busStation,busTime,lastStation,initialOpen,busCo
     <span style={{fontSize:"14px",color:"#707070"}}>{busStation}</span>
 </div>
 <div style={{display:"flex",flexDirection:"row",alignItems:"center",gap:"16px"}}>
-{lastStation && <span style={{fontSize:"12px",color:"#0033CC",padding:"3px 7px",backgroundColor:"#E6EDFF"}}>{lastStation}</span>}
+{lastStation && <span style={{fontSize:"12px",color:"#0033CC",padding:"3px 7px",backgroundColor:"#E6EDFF",borderRadius:"4px"}}>{lastStation}</span>}
     <span style={{display:"flex",flexDirection:"row",alignItems:"center",gap:"1px"}}>
     <span style={{fontSize:"18px",fontWeight:"600",color:"#222222"}}>{busTime}</span>
 

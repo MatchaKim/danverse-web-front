@@ -1,11 +1,17 @@
 interface ButtonProps {
-    variant: "primary" | "default"
-    size: "small" | "medium" | "large"
+    variant?: "primary" | "default" | "secondary"
+    size?: "small" | "medium" | "large"
     children: React.ReactNode
     onClick?: () => void
     width?: string
 }
-const Button = ({variant="default",size="small",children,onClick,width}:ButtonProps) => {
+const Button = ({
+    variant = "default",
+    size = "small",
+    children,
+    onClick,
+    width
+}: ButtonProps) => {
     const styles = {
         primary: {
             color: "#0133CB",
@@ -14,12 +20,20 @@ const Button = ({variant="default",size="small",children,onClick,width}:ButtonPr
             fontSize: "14px",
             fontWeight: "600"
         },
-        default: {
+        secondary: {
             color: "#707070",
             backgroundColor: "#F6F6F6",
             padding: "8px 16px",
             fontSize: "14px",
             fontWeight: "600"
+        },
+        default: {
+            color: "#0033CC",
+            backgroundColor: "white",
+            padding: "8px 16px",
+            fontSize: "14px",
+            fontWeight: "600",
+            border: "1px solid #0033CC"
         },
         sizes: {
             small: {
@@ -40,12 +54,21 @@ const Button = ({variant="default",size="small",children,onClick,width}:ButtonPr
         }
     };
 
-    const { color, backgroundColor, padding, fontSize, fontWeight } = {
+    const { color, backgroundColor, padding, fontSize, fontWeight, border = "none" } = {
         ...styles[variant],
-        ...styles.sizes[size]
+        ...styles.sizes[size],
     };
 
-    return <button style={{color, padding, borderRadius: "4px", backgroundColor, fontSize, fontWeight, border: "none", width: width ?? "" }} onClick={onClick}>{children}</button>
+    return <button style={{
+        color, 
+        padding, 
+        borderRadius: "4px", 
+        backgroundColor, 
+        fontSize, 
+        fontWeight, 
+        border,
+        width: width ?? "" 
+    }} onClick={onClick}>{children}</button>
 }
 
 export default Button
