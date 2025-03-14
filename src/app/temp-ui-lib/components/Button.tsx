@@ -18,14 +18,16 @@ const Button = ({
             backgroundColor: "#E6EDFF",
             padding: "8px 16px",
             fontSize: "14px",
-            fontWeight: "600"
+            fontWeight: "600",
+            border: "none"
         },
         secondary: {
             color: "#707070",
             backgroundColor: "#F6F6F6",
             padding: "8px 16px",
             fontSize: "14px",
-            fontWeight: "600"
+            fontWeight: "600",
+            border: "none"
         },
         default: {
             color: "#0033CC",
