@@ -16,12 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const appKey=process.env.NEXT_PUBLIC_KAKAO_MAP_KEY
-  const gaId=process.env.NEXT_PUBLIC_GA_ID
+
   return (
     <html lang="ko">
       <head>
       <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${appKey}`}></script>
-      <GoogleAnalytics gaId={gaId || ''} />
+      <GoogleAnalytics gaId="GTM-MCST3SGL" />
       </head>      
       <body>
       <Suspense fallback={<Skeleton height={100} />}>
